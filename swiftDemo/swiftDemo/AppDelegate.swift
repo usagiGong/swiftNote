@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  swiftDemo
 //
-//  Created by 龚文娟 on 17/9/28.
-//  Copyright © 2017年 l. All rights reserved.
+//  Created by  on 17/9/28.
+//  Copyright © 2017 l. All rights reserved.
 //
 
 import UIKit

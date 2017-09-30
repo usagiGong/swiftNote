@@ -22,6 +22,9 @@
 		3F294E171F7D363800788ABC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F294E1A1F7D363800788ABC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F294E1C1F7D363800788ABC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F294E221F7F5FDC00788ABC /* 用运行时获取属性名称.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "用运行时获取属性名称.playground"; sourceTree = "<group>"; };
+		3F294E231F7F8AFF00788ABC /* 构造函数.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "构造函数.playground"; sourceTree = "<group>"; };
+		3F294E241F7FBEB500788ABC /* 闭包.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "闭包.playground"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +41,9 @@
 		3F294E041F7D363800788ABC = {
 			isa = PBXGroup;
 			children = (
+				3F294E241F7FBEB500788ABC /* 闭包.playground */,
+				3F294E231F7F8AFF00788ABC /* 构造函数.playground */,
+				3F294E221F7F5FDC00788ABC /* 用运行时获取属性名称.playground */,
 				3F294E0F1F7D363800788ABC /* swiftDemo */,
 				3F294E0E1F7D363800788ABC /* Products */,
 			);
@@ -302,6 +308,7 @@
 				3F294E211F7D363800788ABC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
