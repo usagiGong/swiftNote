@@ -33,6 +33,7 @@
 		3F294E2C1F7FEB4100788ABC /* ContactorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactorModel.swift; sourceTree = "<group>"; };
 		3F294E2E1F8096D700788ABC /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F294E321F80999700788ABC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		3F294E7E1F80E4F400788ABC /* 命名空间和反射机制.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "命名空间和反射机制.playground"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +50,7 @@
 		3F294E041F7D363800788ABC = {
 			isa = PBXGroup;
 			children = (
+				3F294E7E1F80E4F400788ABC /* 命名空间和反射机制.playground */,
 				3F294E241F7FBEB500788ABC /* 闭包.playground */,
 				3F294E231F7F8AFF00788ABC /* 构造函数.playground */,
 				3F294E221F7F5FDC00788ABC /* 用运行时获取属性名称.playground */,
