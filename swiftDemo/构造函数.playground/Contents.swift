@@ -134,6 +134,25 @@ let littlePine = Pine(dict:["name":"松树","height":1.8,"color":UIColor.green])
 
  */
 
+//MARK: - UIView子类重写父类构造函数
+/*
+  所有UIView及其子类,一旦重写了构造函数,就必须也要实现init?(coder aDecoder:)函数
+  以确保提供了代码和xib两种方式实现这个类
+ */
+
+class myLabel: UILabel {
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        //这句代码写着是表示不允许通过xib/sb方式实现这个类.
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+}
+
 class Person: NSObject {
     
     var alive = true
