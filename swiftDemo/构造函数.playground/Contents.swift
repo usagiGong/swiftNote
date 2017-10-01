@@ -180,5 +180,5 @@ class  Chinese: Person {
 
 
 let me = Chinese()
-print(me.name,me.alive)
+print(me.name ?? "lala",me.alive)  //不给默认值会有警告
 

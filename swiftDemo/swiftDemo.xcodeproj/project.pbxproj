@@ -9,22 +9,30 @@
 /* Begin PBXBuildFile section */
 		3F294E111F7D363800788ABC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F294E101F7D363800788ABC /* AppDelegate.swift */; };
 		3F294E131F7D363800788ABC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F294E121F7D363800788ABC /* ViewController.swift */; };
-		3F294E161F7D363800788ABC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F294E141F7D363800788ABC /* Main.storyboard */; };
 		3F294E181F7D363800788ABC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F294E171F7D363800788ABC /* Assets.xcassets */; };
-		3F294E1B1F7D363800788ABC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F294E191F7D363800788ABC /* LaunchScreen.storyboard */; };
+		3F294E261F7FDC0D00788ABC /* contactList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F294E251F7FDC0D00788ABC /* contactList.storyboard */; };
+		3F294E291F7FE8B200788ABC /* WJContactListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F294E281F7FE8B200788ABC /* WJContactListController.swift */; };
+		3F294E2B1F7FE8D700788ABC /* WJContactorDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F294E2A1F7FE8D700788ABC /* WJContactorDetailsController.swift */; };
+		3F294E2D1F7FEB4100788ABC /* ContactorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F294E2C1F7FEB4100788ABC /* ContactorModel.swift */; };
+		3F294E2F1F8096D700788ABC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F294E2E1F8096D700788ABC /* LaunchScreen.storyboard */; };
+		3F294E331F80999700788ABC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F294E321F80999700788ABC /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3F294E0D1F7D363800788ABC /* swiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F294E101F7D363800788ABC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F294E121F7D363800788ABC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3F294E151F7D363800788ABC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F294E171F7D363800788ABC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3F294E1A1F7D363800788ABC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F294E1C1F7D363800788ABC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F294E221F7F5FDC00788ABC /* 用运行时获取属性名称.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "用运行时获取属性名称.playground"; sourceTree = "<group>"; };
 		3F294E231F7F8AFF00788ABC /* 构造函数.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "构造函数.playground"; sourceTree = "<group>"; };
 		3F294E241F7FBEB500788ABC /* 闭包.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "闭包.playground"; sourceTree = "<group>"; };
+		3F294E251F7FDC0D00788ABC /* contactList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = contactList.storyboard; sourceTree = "<group>"; };
+		3F294E281F7FE8B200788ABC /* WJContactListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WJContactListController.swift; sourceTree = "<group>"; };
+		3F294E2A1F7FE8D700788ABC /* WJContactorDetailsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WJContactorDetailsController.swift; sourceTree = "<group>"; };
+		3F294E2C1F7FEB4100788ABC /* ContactorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactorModel.swift; sourceTree = "<group>"; };
+		3F294E2E1F8096D700788ABC /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3F294E321F80999700788ABC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +68,26 @@
 		3F294E0F1F7D363800788ABC /* swiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3F294E271F7FE87A00788ABC /* 简易通讯录 */,
+				3F294E251F7FDC0D00788ABC /* contactList.storyboard */,
 				3F294E101F7D363800788ABC /* AppDelegate.swift */,
 				3F294E121F7D363800788ABC /* ViewController.swift */,
-				3F294E141F7D363800788ABC /* Main.storyboard */,
+				3F294E2E1F8096D700788ABC /* LaunchScreen.storyboard */,
+				3F294E321F80999700788ABC /* Main.storyboard */,
 				3F294E171F7D363800788ABC /* Assets.xcassets */,
-				3F294E191F7D363800788ABC /* LaunchScreen.storyboard */,
 				3F294E1C1F7D363800788ABC /* Info.plist */,
 			);
 			path = swiftDemo;
+			sourceTree = "<group>";
+		};
+		3F294E271F7FE87A00788ABC /* 简易通讯录 */ = {
+			isa = PBXGroup;
+			children = (
+				3F294E281F7FE8B200788ABC /* WJContactListController.swift */,
+				3F294E2A1F7FE8D700788ABC /* WJContactorDetailsController.swift */,
+				3F294E2C1F7FEB4100788ABC /* ContactorModel.swift */,
+			);
+			name = "简易通讯录";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,9 +150,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F294E1B1F7D363800788ABC /* LaunchScreen.storyboard in Resources */,
+				3F294E261F7FDC0D00788ABC /* contactList.storyboard in Resources */,
+				3F294E2F1F8096D700788ABC /* LaunchScreen.storyboard in Resources */,
 				3F294E181F7D363800788ABC /* Assets.xcassets in Resources */,
-				3F294E161F7D363800788ABC /* Main.storyboard in Resources */,
+				3F294E331F80999700788ABC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,31 +164,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F294E2D1F7FEB4100788ABC /* ContactorModel.swift in Sources */,
+				3F294E291F7FE8B200788ABC /* WJContactListController.swift in Sources */,
+				3F294E2B1F7FE8D700788ABC /* WJContactorDetailsController.swift in Sources */,
 				3F294E131F7D363800788ABC /* ViewController.swift in Sources */,
 				3F294E111F7D363800788ABC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		3F294E141F7D363800788ABC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3F294E151F7D363800788ABC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		3F294E191F7D363800788ABC /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3F294E1A1F7D363800788ABC /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		3F294E1D1F7D363800788ABC /* Debug */ = {
