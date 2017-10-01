@@ -76,13 +76,24 @@ class WJContactListController: UITableViewController {
                 self.tableView.reloadRows(at: [indexPath], with: .automatic)
             } 
         } else {   //sender不是index的时候就是新增
-            vc.completion = {
+            
+            //completion是vc的属性,会强引用闭包,在闭包里调用vc,闭包会强引用vc. 循环引用
+            
+            /*
+             vc.completion = {
                 guard let data = vc.contactor else {
                     return
                 }
-                //数据插入第一条
-                self.dataArr.insert(data, at: 0)
-                self.tableView.reloadData()
+             }
+            */
+            //[weak vc]把vc在闭包中变成了弱引用,弱引用是可选的,所以使用的时候要加?
+            vc.completion = { [weak vc] in
+                    guard let data = vc?.contactor else {
+                        return
+                    } 
+                    //数据插入第一条
+                    self.dataArr.insert(data, at: 0)
+                    self.tableView.reloadData()
             }
         }
     }

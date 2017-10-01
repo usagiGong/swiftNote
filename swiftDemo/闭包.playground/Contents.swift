@@ -17,3 +17,40 @@ var str = "Hello, playground"
  
  
  */
+
+
+//循环引用场景1 
+//completion是vc的属性,会强引用闭包,在闭包里调用vc,闭包会强引用vc. 循环引用
+/*
+ vc.completion = {
+ guard let data = vc.contactor else {
+ return
+ }
+ }
+ */
+
+class TestVC1: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        //[weak vc]把vc在闭包中变成了弱引用,弱引用是可选的,所以使用的时候要加?
+        let vc = TestVC2()
+        vc.completion = { [weak vc] in
+            guard let data = vc?.name else {
+                return
+            } 
+            print(data)
+        }
+
+    }
+}
+
+class TestVC2: UIViewController {
+    
+    var completion: (() -> ())?
+    var name: String?
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+}

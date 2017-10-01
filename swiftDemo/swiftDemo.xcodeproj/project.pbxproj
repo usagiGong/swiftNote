@@ -69,7 +69,6 @@
 			isa = PBXGroup;
 			children = (
 				3F294E271F7FE87A00788ABC /* 简易通讯录 */,
-				3F294E251F7FDC0D00788ABC /* contactList.storyboard */,
 				3F294E101F7D363800788ABC /* AppDelegate.swift */,
 				3F294E121F7D363800788ABC /* ViewController.swift */,
 				3F294E2E1F8096D700788ABC /* LaunchScreen.storyboard */,
@@ -86,6 +85,7 @@
 				3F294E281F7FE8B200788ABC /* WJContactListController.swift */,
 				3F294E2A1F7FE8D700788ABC /* WJContactorDetailsController.swift */,
 				3F294E2C1F7FEB4100788ABC /* ContactorModel.swift */,
+				3F294E251F7FDC0D00788ABC /* contactList.storyboard */,
 			);
 			name = "简易通讯录";
 			sourceTree = "<group>";
