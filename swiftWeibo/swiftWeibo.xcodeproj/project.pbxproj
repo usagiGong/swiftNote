@@ -16,6 +16,7 @@
 		3F727A401F81DA5E00EF3C59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F727A471F81DA5E00EF3C59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F727A4C1F81DA5E00EF3C59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F727A5C1F820B5A00EF3C59 /* weibo-brige.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "weibo-brige.h"; path = "../weibo-brige.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +51,7 @@
 			children = (
 				3F727A521F82052D00EF3C59 /* classes */,
 				3F727A401F81DA5E00EF3C59 /* AppDelegate.swift */,
+				3F727A5C1F820B5A00EF3C59 /* weibo-brige.h */,
 				3F727A471F81DA5E00EF3C59 /* Assets.xcassets */,
 				3F727A4C1F81DA5E00EF3C59 /* Info.plist */,
 			);
