@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		3F727A411F81DA5E00EF3C59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F727A401F81DA5E00EF3C59 /* AppDelegate.swift */; };
 		3F727A481F81DA5E00EF3C59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F727A471F81DA5E00EF3C59 /* Assets.xcassets */; };
+		3F727A5F1F82236000EF3C59 /* WJMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F727A5E1F82236000EF3C59 /* WJMainController.swift */; };
+		3F727A611F82511200EF3C59 /* WJBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F727A601F82511200EF3C59 /* WJBaseViewController.swift */; };
+		3F727A631F8251B100EF3C59 /* WJNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F727A621F8251B100EF3C59 /* WJNavigationController.swift */; };
+		3F727A651F8251ED00EF3C59 /* WJHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F727A641F8251ED00EF3C59 /* WJHomeController.swift */; };
+		3F727A671F82532B00EF3C59 /* WJMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F727A661F82532B00EF3C59 /* WJMessageController.swift */; };
+		3F727A691F82535100EF3C59 /* WJDiscoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F727A681F82535100EF3C59 /* WJDiscoverController.swift */; };
+		3F727A6B1F82537100EF3C59 /* WJProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F727A6A1F82537100EF3C59 /* WJProfileController.swift */; };
+		3F727A721F82633E00EF3C59 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F727A711F82633E00EF3C59 /* Bundle+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +25,15 @@
 		3F727A471F81DA5E00EF3C59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F727A4C1F81DA5E00EF3C59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F727A5C1F820B5A00EF3C59 /* weibo-brige.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "weibo-brige.h"; path = "../weibo-brige.h"; sourceTree = "<group>"; };
+		3F727A5E1F82236000EF3C59 /* WJMainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WJMainController.swift; sourceTree = "<group>"; };
+		3F727A601F82511200EF3C59 /* WJBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WJBaseViewController.swift; sourceTree = "<group>"; };
+		3F727A621F8251B100EF3C59 /* WJNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WJNavigationController.swift; sourceTree = "<group>"; };
+		3F727A641F8251ED00EF3C59 /* WJHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WJHomeController.swift; sourceTree = "<group>"; };
+		3F727A661F82532B00EF3C59 /* WJMessageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WJMessageController.swift; sourceTree = "<group>"; };
+		3F727A681F82535100EF3C59 /* WJDiscoverController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WJDiscoverController.swift; sourceTree = "<group>"; };
+		3F727A6A1F82537100EF3C59 /* WJProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WJProfileController.swift; sourceTree = "<group>"; };
+		3F727A711F82633E00EF3C59 /* Bundle+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
+		3F727A741F8265CB00EF3C59 /* swiftWeibo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "swiftWeibo-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +96,7 @@
 		3F727A541F82052D00EF3C59 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				3F727A6C1F8255DA00EF3C59 /* extensions */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -98,6 +116,7 @@
 		3F727A561F82052D00EF3C59 /* Discover */ = {
 			isa = PBXGroup;
 			children = (
+				3F727A681F82535100EF3C59 /* WJDiscoverController.swift */,
 			);
 			path = Discover;
 			sourceTree = "<group>";
@@ -105,6 +124,7 @@
 		3F727A571F82052D00EF3C59 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				3F727A641F8251ED00EF3C59 /* WJHomeController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -112,6 +132,9 @@
 		3F727A581F82052D00EF3C59 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				3F727A5E1F82236000EF3C59 /* WJMainController.swift */,
+				3F727A601F82511200EF3C59 /* WJBaseViewController.swift */,
+				3F727A621F8251B100EF3C59 /* WJNavigationController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -119,6 +142,7 @@
 		3F727A591F82052D00EF3C59 /* Message */ = {
 			isa = PBXGroup;
 			children = (
+				3F727A661F82532B00EF3C59 /* WJMessageController.swift */,
 			);
 			path = Message;
 			sourceTree = "<group>";
@@ -126,6 +150,7 @@
 		3F727A5A1F82052D00EF3C59 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				3F727A6A1F82537100EF3C59 /* WJProfileController.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -135,6 +160,15 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3F727A6C1F8255DA00EF3C59 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3F727A741F8265CB00EF3C59 /* swiftWeibo-Bridging-Header.h */,
+				3F727A711F82633E00EF3C59 /* Bundle+Extension.swift */,
+			);
+			path = extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +205,7 @@
 					3F727A3C1F81DA5E00EF3C59 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = P9SB3ZQUFF;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -209,7 +244,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F727A631F8251B100EF3C59 /* WJNavigationController.swift in Sources */,
+				3F727A721F82633E00EF3C59 /* Bundle+Extension.swift in Sources */,
 				3F727A411F81DA5E00EF3C59 /* AppDelegate.swift in Sources */,
+				3F727A6B1F82537100EF3C59 /* WJProfileController.swift in Sources */,
+				3F727A671F82532B00EF3C59 /* WJMessageController.swift in Sources */,
+				3F727A611F82511200EF3C59 /* WJBaseViewController.swift in Sources */,
+				3F727A651F8251ED00EF3C59 /* WJHomeController.swift in Sources */,
+				3F727A5F1F82236000EF3C59 /* WJMainController.swift in Sources */,
+				3F727A691F82535100EF3C59 /* WJDiscoverController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,12 +357,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = P9SB3ZQUFF;
 				INFOPLIST_FILE = swiftWeibo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.l.swiftWeibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swiftWeibo/classes/Tools/extensions/swiftWeibo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -329,12 +375,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = P9SB3ZQUFF;
 				INFOPLIST_FILE = swiftWeibo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.l.swiftWeibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swiftWeibo/classes/Tools/extensions/swiftWeibo-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -358,6 +406,7 @@
 				3F727A511F81DA5E00EF3C59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  swiftWeibo
 //
-//  Created by 龚文娟 on 17/10/2.
-//  Copyright © 2017年 l. All rights reserved.
+//  Created by on 17/10/2.
+//  Copyright © 2017 l. All rights reserved.
 //
 
 import UIKit
@@ -15,7 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        window = UIWindow()
+        window?.backgroundColor = UIColor.white
+        window?.rootViewController = WJMainController()
+        window?.makeKeyAndVisible()
         return true
     }
 
