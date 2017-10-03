@@ -9,20 +9,43 @@
 import UIKit
 
 class WJMainController: UITabBarController {
+    
+    lazy fileprivate var centerBtn: UIButton = UIButton()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         addChildVC()
+        addCenterBtn()
     }
 
-    private func addChildVC () {
+//FIXME: 按钮点击方法还没写
+    @objc fileprivate func centerBtnClick() {
+        print("点击了centerBtn")
+    }
+}
+
+//MARK:设置界面
+extension WJMainController {
+    
+    fileprivate func addCenterBtn() {
+        tabBar.addSubview(centerBtn)
+        //因为tabBar会有个容错的间隙,所以如果宽度刚好的话,就有可能点到那个小空间,就把那个没用VC给点出来了
+        let width = tabBar.bounds.width / CGFloat((childViewControllers.count)) - 1
+        centerBtn.frame = tabBar.bounds.insetBy(dx: 2 * width, dy: 0)
+        centerBtn.setImage(UIImage(named:"bottombar_publish_notclick"), for: .normal)
+        centerBtn.addTarget(self, action: #selector(centerBtnClick), for: .touchUpInside)
+        
+    }
+    
+   fileprivate func addChildVC () {
         
         let arr = [
-            ["name":"WJHomeController","title":"首页","image":"bottombar_home_"],
-            ["name":"WJMessageController","title":"消息","image":"bottombar_circle_"],
-            ["name":"WJDiscoverController","title":"发现","image":"bottombar_heart_"],
-            ["name":"WJProfileController","title":"我的","image":"bottomber_original_"],
-        ]
+            ["name": "WJHomeController","title": "首页","image": "bottombar_home_"],
+            ["name": "WJMessageController","title": "消息","image": "bottombar_circle_"],
+            ["name": "UIViewController"],//加个不用的VC占位,让tabBar5等分
+            ["name": "WJDiscoverController","title": "发现","image": "bottombar_heart_"],
+            ["name": "WJProfileController","title": "我的","image": "bottomber_original_"],
+            ]
         
         var arrTemp = [UIViewController]()
         for dict in arr {
@@ -32,12 +55,12 @@ class WJMainController: UITabBarController {
     }
     
     private func controller(dict: [String : String]) -> UIViewController {
-         //根控制器都要拼接命名空间       
+        //根控制器都要拼接命名空间       
         guard let clsName = dict["name"],let title = dict["title"],
-              let image = dict["image"], 
-              let cls = NSClassFromString(Bundle.main.nameSpace + "." + clsName) as? UIViewController.Type  else {
-        
-            return UIViewController()
+            let image = dict["image"], 
+            let cls = NSClassFromString(Bundle.main.nameSpace + "." + clsName) as? UIViewController.Type  else {
+                
+                return UIViewController()
         }
         
         let vc = cls.init()
@@ -49,12 +72,9 @@ class WJMainController: UITabBarController {
         //设置选中状态时的颜色
         vc.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.orange], for: .highlighted)
         //也可以设置字体大小 ,要在nomal状态设置才有效//默认就是12号字体.
-        vc.tabBarItem.setTitleTextAttributes([NSFontAttributeName: UIFont.boldSystemFont(ofSize: 12)], for: .normal)
-    
-         return nav
+        vc.tabBarItem.setTitleTextAttributes([NSFontAttributeName: UIFont.systemFont(ofSize: 12)], for: .normal)
+        
+        return nav
     }
-}
 
-//extension WJMainController {
-    
-//}
+}

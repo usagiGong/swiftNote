@@ -37,6 +37,7 @@
 		3F294E7F1F80E76600788ABC /* 懒加载.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "懒加载.playground"; sourceTree = "<group>"; };
 		3F294E801F80E88E00788ABC /* 可选项.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "可选项.playground"; sourceTree = "<group>"; };
 		3F294E811F81246D00788ABC /* 属性.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "属性.playground"; sourceTree = "<group>"; };
+		3F39235F1F833E2D0043EDD7 /* 访问权限.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "访问权限.playground"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +54,7 @@
 		3F294E041F7D363800788ABC = {
 			isa = PBXGroup;
 			children = (
+				3F39235F1F833E2D0043EDD7 /* 访问权限.playground */,
 				3F294E811F81246D00788ABC /* 属性.playground */,
 				3F294E801F80E88E00788ABC /* 可选项.playground */,
 				3F294E7F1F80E76600788ABC /* 懒加载.playground */,
