@@ -79,6 +79,20 @@
 			name = Network;
 			sourceTree = "<group>";
 		};
+		3F6E81711F85FBF20034E0DA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3F6E81721F85FBF20034E0DA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		3F727A341F81DA5E00EF3C59 = {
 			isa = PBXGroup;
 			children = (
@@ -99,9 +113,9 @@
 			isa = PBXGroup;
 			children = (
 				3F727A521F82052D00EF3C59 /* classes */,
+				3F727A471F81DA5E00EF3C59 /* Assets.xcassets */,
 				3F727A401F81DA5E00EF3C59 /* AppDelegate.swift */,
 				3F727A5C1F820B5A00EF3C59 /* weibo-brige.h */,
-				3F727A471F81DA5E00EF3C59 /* Assets.xcassets */,
 				3F727A4C1F81DA5E00EF3C59 /* Info.plist */,
 			);
 			path = swiftWeibo;
@@ -110,19 +124,12 @@
 		3F727A521F82052D00EF3C59 /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				3F6E81711F85FBF20034E0DA /* Model */,
+				3F6E81721F85FBF20034E0DA /* ViewModel */,
 				3F727A551F82052D00EF3C59 /* View */,
-				3F727A531F82052D00EF3C59 /* Model */,
 				3F727A541F82052D00EF3C59 /* Tools */,
-				3F727A5B1F82052D00EF3C59 /* ViewModel */,
 			);
 			path = classes;
-			sourceTree = "<group>";
-		};
-		3F727A531F82052D00EF3C59 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		3F727A541F82052D00EF3C59 /* Tools */ = {
@@ -187,13 +194,6 @@
 				3F727A6A1F82537100EF3C59 /* WJProfileController.swift */,
 			);
 			path = Profile;
-			sourceTree = "<group>";
-		};
-		3F727A5B1F82052D00EF3C59 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		3F727A6C1F8255DA00EF3C59 /* extensions */ = {
