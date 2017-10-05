@@ -39,12 +39,16 @@ extension WJMainController {
     
    fileprivate func addChildVC () {
         
-        let arr = [
-            ["name": "WJHomeController","title": "首页","image": "bottombar_home_"],
-            ["name": "WJMessageController","title": "消息","image": "bottombar_circle_"],
+    let arr: [[String: Any]] = [
+            ["name": "WJHomeController" ,"title": "首页","image": "bottombar_home_",
+             "vistorInfo":["imageName": "","labelText": ""]],
+            ["name": "WJMessageController","title": "消息","image": "bottombar_circle_",
+             "vistorInfo":["imageName": "visitordiscover_image_message","labelText": "想给谁发信息啊 想给谁发信息啊啊啊啊 啊啊"]],
             ["name": "UIViewController"],//加个不用的VC占位,让tabBar5等分
-            ["name": "WJDiscoverController","title": "发现","image": "bottombar_heart_"],
-            ["name": "WJProfileController","title": "我的","image": "bottomber_original_"],
+            ["name": "WJDiscoverController","title": "发现","image": "bottombar_heart_",
+             "vistorInfo":["imageName": "","labelText": ""]],
+            ["name": "WJProfileController","title": "我的","image": "bottomber_original_",
+             "vistorInfo":["imageName": "visitordiscover_image_profile","labelText": "快点登录吧 这样就可以跟其他小伙伴一起玩耍啦"]],
             ]
         
         var arrTemp = [UIViewController]()
@@ -54,17 +58,20 @@ extension WJMainController {
         viewControllers = arrTemp
     }
     
-    private func controller(dict: [String : String]) -> UIViewController {
+    private func controller(dict: [String : Any]) -> UIViewController {
+        
+        //let visitorInfo = dict["vistorInfo"] as? [[String:String]]
         //根控制器都要拼接命名空间       
-        guard let clsName = dict["name"],let title = dict["title"],
-            let image = dict["image"], 
-            let cls = NSClassFromString(Bundle.main.nameSpace + "." + clsName) as? UIViewController.Type  else {
+        guard let clsName = dict["name"] as? String,let title = dict["title"] as? String ,
+            let image = dict["image"] as? String, 
+        let cls = NSClassFromString(Bundle.main.nameSpace + "." + clsName) as? WJBaseViewController.Type  else {
                 
                 return UIViewController()
         }
         
         let vc = cls.init()
         vc.title = title;
+        vc.vistorInfo = dict["vistorInfo"] as! [String : String]?
         vc.tabBarItem.image = UIImage(named:image + "notclick")?.withRenderingMode(.alwaysOriginal)
         vc.tabBarItem.selectedImage = UIImage(named:image + "click")?.withRenderingMode(.alwaysOriginal)
         let nav = WJNavigationController(rootViewController: vc)

@@ -56,6 +56,19 @@ class person: NSObject {
         return "lazy" + (self.name ?? "")
     }()
 
+    //懒加载简单的写法
+    private lazy var houseView = UIImageView(image: UIImage(named: "vvisitordiscover_feed_image_house"))
+    
+    //懒加载的闭包写法
+    private lazy var tipLabel: UILabel = {
+        
+        let label = UILabel()
+        label.text = "关注一些人,回这里看看有什么惊喜,关注一些人,回这里看看有什么惊喜"
+        label.font = UIFont.systemFont(ofSize: 14)
+        label.textColor = UIColor.darkGray
+        return label
+    }()
+
 }
 
 let p = person()

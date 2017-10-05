@@ -44,7 +44,7 @@ class testVC: UIViewController {
     
 //MARK:- 懒加载写法1 *************************
     
-    //用lazy声明的属性,声明时要显示指定类型,而不会自动推导
+    //用lazy声明的属性,如果是调用UIKit的构造函数的话,可以不指定类型,否则就要指定类型
     //用lazy属性,只是定义,此时并不会初始化和分配空间,所以不会在viewDidload之前创建
     //一旦使用的时候就会自动创建,后面用的时候就不用加可选符号
     lazy var labelThree: myLabel = myLabel()
