@@ -1,0 +1,13 @@
+
+# platform :ios, ‘8.0’
+
+target 'swiftWeibo' do
+
+pod ‘AFNetworking’
+pod ‘pop’
+pod ‘FMDB’
+pod ’SDWebImage’
+pod ’SVProgressHUD’
+pod ‘YYModel’
+
+end
