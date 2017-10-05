@@ -10,4 +10,5 @@ import UIKit
 
 class WJHomeModel: NSObject {
 
+    var int = 10
 }
